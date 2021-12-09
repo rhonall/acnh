@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACNH</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="search">
+            <form id="search-bar">
+                <label for="name">Search for:</label>
+                <input type="text" id="name">
+                <select name="category" id="category">
+                    <option value="bugs">Bugs</option>
+                    <option value="fish">Fish</option>
+                    <option value="fossils">Fossils</option>
+                    <option value="villagers">Villagers</option>
+                </select>
+                <input type="submit" value="Search" id="searchBtn">
+            </form>
+        </div>
+        <div id="container"></div>
+        <div id="favLists">
+            <div id="favBugs" class="favList">❤️ Bugs<ul id="favBugs-ul"></ul></div>
+            <div id="favFishes" class="favList">❤️ Fishes<ul id="favFishes-ul"></ul></div>
+            <div id="favFossils" class="favList">❤️ Fossils<ul id="favFossils-ul"></ul></div>
+            <div id="favVillagers" class="favList">❤️ Villagers<ul id="favVillagers-ul"></ul></div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: center;
+}
+
+#search {
+    background-color: rgb(61, 95, 95);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#error {
+    padding: 3rem 0;
+}
+
+span {
+    font-style: italic;
+    color: rgb(66, 121, 121);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 3rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+}
+
+#catch-phrase {
+    font-style: italic;
+}
+
+button {
+    padding: 0.5em 2em;
+    margin: 2rem 0;
+    background-color: rgb(61, 95, 95);
+    border: hidden;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+button:hover {
+    background-color: rgb(73, 114, 114);
+}
+
+#favLists {
+    background-color: rgb(200, 204, 175);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#favLists > * {
+    border: 1px solid rgb(232, 236, 206);
+    padding: 0.5em 0;
+    min-height: 100px;
+}
+
+.favList ul {
+    text-align: left;
+    padding-left: 16px;
+}
+
+.favList ul li {
+    list-style: none;
+}
+
+span {
+    padding: 0 5px;
+    color: black;
+    font-style: normal;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+
