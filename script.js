@@ -125,7 +125,6 @@ function makeVillager(data) {
     <h4>Species: ${data["species"]}</h4>
     <h4>Gender: ${data["gender"]}</h4>
     <h4 id="catch-phrase">"${data["catch-phrase"]}"</h4>
-    <button id="favourite">🤍</button>    
     `
     checkifLoved (favVillagersArr, data) 
 }
