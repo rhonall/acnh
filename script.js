@@ -17,7 +17,7 @@ window.addEventListener("load", fetchVillagers, { once: true} )
 
 // Fetch Villagers data from API and store it in an array
 function fetchVillagers() {
-    let ACNHVillagers = `http://acnhapi.com/v1/villagers/`
+    let ACNHVillagers = `https://acnhapi.com/v1/villagers/`
     fetch(ACNHVillagers)
         .then(response => response.json())
         .then(data => {
@@ -132,7 +132,7 @@ function makeVillager(data) {
 
 // Fetch data from ACNH API
 function fetchData(cat, name) {
-    let ACNHAPI = `http://acnhapi.com/v1/${cat}/` + name
+    let ACNHAPI = `https://acnhapi.com/v1/${cat}/` + name
     fetch(ACNHAPI)
         .then(response => response.json())
         .then(function(data) {
